@@ -1,0 +1,49 @@
+/**************************/
+/* IMPORTS */
+/**************************/
+
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* font-family: 'Space Mono', monospace; */
+
+
+/**************************/
+/* VARIABLES */
+/**************************/
+
+
+:root {
+
+
+  /* FONTS */
+
+  /* Font-family */
+  --main-fomt: 'Space Mono', monospace;
+
+  /* Font-weights */
+  --fw-reg: 400;
+  --fw-bold: 700;
+  
+
+  /* COLORS */
+
+  /* Shared */
+  --blue: #0079FF;
+
+  /* Light Mode */
+  --grey: #697C9A;
+  --blue-grey: #4B6A9B;
+  --dark-grey: #2B3442;
+  --light-grey: #F6F8FF;
+  --light-grey-white: #FEFEFE;
+
+  /* Dark Mode */
+  --white: #FFFFFF;
+  --dark-blackish-grey: #141D2F;
+  --dark-blue-grey: #1E2A47;
+  
+
+
+}
