@@ -212,6 +212,7 @@ body {
 /* Main Content */
 .main-content {
   width: 21.8rem;
+  height: 34.466667rem;
   margin: 0 auto;
   background-color: var(--light-grey-white);
   border-radius: 1rem;
@@ -312,7 +313,7 @@ body {
 .user-stats {
   width: 18.6rem;
   height: 5.666667rem;
-  margin: 0 auto;
+  margin: 0 auto 1.6rem auto;
   border-radius: 0.666667rem;
   background-color: var(--light-grey);
   display: flex;
@@ -355,6 +356,32 @@ body {
   font-weight: var(--fw-bold);
   line-height: 1.6rem;
   color: var(--dark-grey);
+  margin: 0;
+}
+
+
+/********** SOCIAL INFO *********/
+
+
+/* Social Info Container */
+.social-info-container {
+  height: 8.466667rem;
+  margin-left: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Social Info */
+.social-info {
+  height: 1.333333rem;
+  display: flex;
+}
+
+
+/* User Social Info */
+.user-social-info {
   margin: 0;
 }
 

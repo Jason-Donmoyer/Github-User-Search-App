@@ -12,6 +12,11 @@ let userRepos = document.getElementById('user-repos');
 let userFollowers = document.getElementById('user-followers');
 let userFollowing = document.getElementById('user-following');
 
+let userLocation = document.getElementById('user-location');
+let userBlog = document.getElementById('user-blog');
+let userTwitterName = document.getElementById('user-twitter-name');
+let userCompany = document.getElementById('user-company');
+
 // Object to store user data
 let newUser = {
   avatar: '',
@@ -21,6 +26,10 @@ let newUser = {
   repos: '',
   followers: '',
   following: '',
+  location: '',
+  blog: '',
+  twitterUsername: '',
+  company: '',
 }
 
 // On Page Load
@@ -121,6 +130,10 @@ function getUser(userData) {
   newUser.repos = userData["public_repos"];
   newUser.followers = userData["followers"];
   newUser.following = userData["following"];
+  newUser.location = userData["location"];
+  newUser.blog = userData["blog"];
+  newUser.twitterUsername = userData["twitter_username"];
+  newUser.company = userData["company"];
   
   // Update UI with new user object data
   userAvatar.style.backgroundImage = `url(${newUser.avatar})`;
@@ -130,5 +143,9 @@ function getUser(userData) {
   userRepos.innerHTML = newUser.repos;
   userFollowers.innerHTML = newUser.followers;
   userFollowing.innerHTML = newUser.following;
+  userLocation.innerHTML = newUser.location;
+  userBlog.innerHTML = newUser.blog;
+  userTwitterName.innerHTML = newUser.twitterUsername;
+  userCompany.innerHTML = newUser.company;
 }
 
