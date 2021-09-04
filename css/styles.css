@@ -282,3 +282,39 @@ body {
   margin: 0;
   color: var(--grey);
 }
+
+
+/********** BIO *********/
+
+
+/* Bio */
+.bio {
+  width: 18.6rem;
+  margin: 0 auto 1.533333rem auto;
+}
+
+
+/* Bio p */
+.bio-copy {
+  font-size: 0.866667rem;
+  font-weight: var(--fw-reg);
+  line-height: 1.666667rem;
+  word-wrap: normal;
+  color: var(--blue-grey);
+  margin: 0;
+}
+
+
+/********** DARK MODE STYLES *********/
+
+
+/* Light Header Copy */
+.light-header-copy {
+  display: none;
+}
+
+
+/* Sun Icon */
+.icon-sun {
+  display: none;
+}
