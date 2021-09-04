@@ -20,7 +20,7 @@
   /* FONTS */
 
   /* Font-family */
-  --main-fomt: 'Space Mono', monospace;
+  --main-font-family: 'Space Mono', monospace;
 
   /* Font-weights */
   --fw-reg: 400;
@@ -36,6 +36,7 @@
   --grey: #697C9A;
   --blue-grey: #4B6A9B;
   --dark-grey: #2B3442;
+  --logo-black: #222731;
   --light-grey: #F6F8FF;
   --light-grey-white: #FEFEFE;
 
@@ -45,5 +46,86 @@
   --dark-blue-grey: #1E2A47;
   
 
-
 }
+
+
+/**************************/
+/* STYLES */
+/**************************/
+
+
+/* Box Sizing */
+html {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, 
+*:before, 
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+
+  /* Body */
+  body {
+    font-family: var(--main-font-family);
+  }
+
+
+  /*Header */
+  .header {
+    height: 2.533333rem;
+    width: 21.8rem;
+    margin: 2.066667rem auto 2.4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  /* Logo */
+  .logo {
+    font-size: 1.733333rem;
+    font-weight: var(--fw-bold);
+    line-height: 2.567333rem;
+    color: var(--logo-black);
+    margin: 0;
+  }
+
+
+  /* Mode Toggle */
+  .mode-toggle {
+    width: 5.2rem;
+    height: 1.333333rem;
+    display: flex;
+  }
+
+  /* Toggle Hover State */
+  .mode-toggle:hover {
+    cursor: pointer;
+  }
+
+
+  /* Dark Header Copy */
+  .dark-header-copy {
+    font-size: 0.866667rem;
+    line-height: 1.283333rem;
+    letter-spacing: 0.166667rem;
+    font-weight: var(--fw-bold);
+    color: var(--blue-grey);
+    text-transform: uppercase;
+    margin: 0 1.066667rem 0 0;
+  }
+
+
+  /* Moon Icon */
+  .icon-moon {
+    height: 1.333333rem;
+    width: 1.333333rem;
+    color: var(--blue-grey);
+  }
+
