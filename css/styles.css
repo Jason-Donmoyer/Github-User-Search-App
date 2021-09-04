@@ -67,128 +67,215 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  }
+}
 
 
-  /* Body */
-  body {
-    font-family: var(--main-font-family);
-    background-color: var(--light-grey);
-  }
+/* Body */
+body {
+  font-family: var(--main-font-family);
+  background-color: var(--light-grey);
+}
 
 
-  /********** HEADER STYLES *********/
+/********** HEADER STYLES *********/
 
 
-  /*Header */
-  .header {
-    height: 2.533333rem;
-    width: 21.8rem;
-    margin: 2.066667rem auto 2.4rem auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/*Header */
+.header {
+  height: 2.533333rem;
+  width: 21.8rem;
+  margin: 2.066667rem auto 2.4rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
-  /* Logo */
-  .logo {
-    font-size: 1.733333rem;
-    font-weight: var(--fw-bold);
-    line-height: 2.567333rem;
-    color: var(--logo-black);
-    margin: 0;
-  }
+/* Logo */
+.logo {
+  font-size: 1.733333rem;
+  font-weight: var(--fw-bold);
+  line-height: 2.567333rem;
+  color: var(--logo-black);
+  margin: 0;
+}
 
 
-  /* Mode Toggle */
-  .mode-toggle {
-    width: 5.2rem;
-    height: 1.333333rem;
-    display: flex;
-  }
+/* Mode Toggle */
+.mode-toggle {
+  width: 5.2rem;
+  height: 1.333333rem;
+  display: flex;
+}
 
-  /* Toggle Hover State */
-  .mode-toggle:hover {
-    cursor: pointer;
-  }
-
-
-  /* Dark Header Copy */
-  .dark-header-copy {
-    font-size: 0.866667rem;
-    line-height: 1.283333rem;
-    letter-spacing: 0.166667rem;
-    font-weight: var(--fw-bold);
-    color: var(--blue-grey);
-    text-transform: uppercase;
-    margin: 0 1.066667rem 0 0;
-  }
+/* Toggle Hover State */
+.mode-toggle:hover {
+  cursor: pointer;
+}
 
 
-  /* Moon Icon */
-  .icon-moon {
-    height: 1.333333rem;
-    width: 1.333333rem;
-    color: var(--blue-grey);
-  }
+/* Dark Header Copy */
+.dark-header-copy {
+  font-size: 0.866667rem;
+  line-height: 1.283333rem;
+  letter-spacing: 0.166667rem;
+  font-weight: var(--fw-bold);
+  color: var(--blue-grey);
+  text-transform: uppercase;
+  margin: 0 1.066667rem 0 0;
+}
 
 
-  /********** SEARCHBAR STYLES *********/
+/* Moon Icon */
+.icon-moon {
+  height: 1.333333rem;
+  width: 1.333333rem;
+  color: var(--blue-grey);
+}
 
 
-  /* Searchbar Container */
-  .search-bar-container {
-    height: 4rem;
-    width: 21.8rem;
-    background-color: var(--light-grey-white);
-    border-radius: 1rem;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+/********** SEARCHBAR STYLES *********/
 
 
-  /* Search Icon */
-  .icon-search {
-    height: 1.333333rem;
-    width: 1.333333rem;
-    /* margin-left: 1.066667rem;
-    margin-right: 0.596667rem; */
-  }
+/* Searchbar Container */
+.search-bar-container {
+  height: 4rem;
+  width: 21.8rem;
+  background-color: var(--light-grey-white);
+  border-radius: 1rem;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  margin: 0 auto 1.066667rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 
-  /* User Input */
-  .user-input {
-    width: 12.266667rem;
-    padding: 0;
-    border: none;
-    font-size: 0.866667rem;
-    font-weight: var(--fw-reg);
-    line-height: 1.666667rem;
-    color: var(--blue-grey);
-  }
+/* Search Icon */
+.icon-search {
+  height: 1.333333rem;
+  width: 1.333333rem;
+  /* margin-left: 1.066667rem;
+  margin-right: 0.596667rem; */
+}
 
 
-  /* User Input Focus */
-  .user-input:focus {
-    outline: none;
-  }
+/* User Input */
+.user-input {
+  width: 12.266667rem;
+  padding: 0;
+  border: none;
+  font-size: 0.866667rem;
+  font-weight: var(--fw-reg);
+  line-height: 1.666667rem;
+  color: var(--blue-grey);
+}
 
 
-  /* Submit Button */
-  .btn-submit {
-    height: 3.066667rem;
-    width: 5.6rem;
-    border: none;
-    margin-right: -0.466667rem;
-    border-radius: 0.666667rem;
-    padding: 0;
-    color: var(--white);
-    background-color: var(--blue);
-    font-size: 0.933333rem;
-    font-weight: var(--fw-bold);
-    line-height: 1.4rem;
-  }
+/* User Input Hover State */
+.user-input:hover {
+  cursor: pointer;
+}
+
+
+/* User Input Focus State */
+.user-input:focus {
+  outline: none;
+}
+
+
+/* Submit Button */
+.btn-submit {
+  height: 3.066667rem;
+  width: 5.6rem;
+  border: none;
+  margin-right: -0.466667rem;
+  border-radius: 0.666667rem;
+  padding: 0;
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: 0.933333rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.4rem;
+}
+
+
+/* Submit Button Hover State */
+.btn-submit:hover {
+  cursor: pointer;
+}
+
+
+/********** MAIN CONTENT STYLES *********/
+
+
+/* Main Content */
+.main-content {
+  width: 21.8rem;
+  margin: 0 auto;
+  background-color: var(--light-grey-white);
+  border-radius: 1rem;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+
+
+/* User Info Container */
+.user-info-container {
+  width: 15.533333rem;
+  /* height: 4.666667rem; */
+  padding-top: 2.133333rem;
+  margin-left: 24px;
+  margin-bottom: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* User Avatar */
+.user-avatar {
+  height: 4.666667rem;
+  width: 4.666667rem;
+  border-radius: 50%;
+  background-color: var(--grey);
+  background-size: contain;
+}
+
+
+/* User Info Copy Container */
+.user-info-container-copy {
+  min-width: 9.6rem;
+  height: 4.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Github User Name */
+.github-username {
+  font-size: 1.066667rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.6rem;
+  color: var(--dark-grey);
+  margin: 0;
+}
+
+
+/* Github Login */
+.github-login {
+  font-size: 0.8666667rem;
+  line-height: 1.266667rem;
+  font-weight: var(--fw-reg);
+  margin: 0;
+  color: var(--blue);
+}
+
+
+/* Github Joined Date */
+.github-joined {
+  font-size: 0.8666667rem;
+  line-height: 1.266667rem;
+  font-weight: var(--fw-reg);
+  margin: 0;
+  color: var(--grey);
+}
