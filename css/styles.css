@@ -31,6 +31,7 @@
 
   /* Shared */
   --blue: #0079FF;
+  --white: #FFFFFF;
 
   /* Light Mode */
   --grey: #697C9A;
@@ -41,7 +42,6 @@
   --light-grey-white: #FEFEFE;
 
   /* Dark Mode */
-  --white: #FFFFFF;
   --dark-blackish-grey: #141D2F;
   --dark-blue-grey: #1E2A47;
   
@@ -54,7 +54,7 @@
 /**************************/
 
 
-/* Box Sizing */
+/* Box Sizing and Font Size */
 html {
   font-size: 15px;
   -webkit-box-sizing: border-box;
@@ -73,7 +73,11 @@ html {
   /* Body */
   body {
     font-family: var(--main-font-family);
+    background-color: var(--light-grey);
   }
+
+
+  /********** HEADER STYLES *********/
 
 
   /*Header */
@@ -129,3 +133,62 @@ html {
     color: var(--blue-grey);
   }
 
+
+  /********** SEARCHBAR STYLES *********/
+
+
+  /* Searchbar Container */
+  .search-bar-container {
+    height: 4rem;
+    width: 21.8rem;
+    background-color: var(--light-grey-white);
+    border-radius: 1rem;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+  /* Search Icon */
+  .icon-search {
+    height: 1.333333rem;
+    width: 1.333333rem;
+    /* margin-left: 1.066667rem;
+    margin-right: 0.596667rem; */
+  }
+
+
+  /* User Input */
+  .user-input {
+    width: 12.266667rem;
+    padding: 0;
+    border: none;
+    font-size: 0.866667rem;
+    font-weight: var(--fw-reg);
+    line-height: 1.666667rem;
+    color: var(--blue-grey);
+  }
+
+
+  /* User Input Focus */
+  .user-input:focus {
+    outline: none;
+  }
+
+
+  /* Submit Button */
+  .btn-submit {
+    height: 3.066667rem;
+    width: 5.6rem;
+    border: none;
+    margin-right: -0.466667rem;
+    border-radius: 0.666667rem;
+    padding: 0;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 0.933333rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.4rem;
+  }

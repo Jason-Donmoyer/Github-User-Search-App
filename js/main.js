@@ -1,7 +1,7 @@
 
 // VARIABLES
 const usernameInput = document.getElementById('username-input');
-const submitBtn = document.querySelector('button');
+const submitBtn = document.querySelector('#submit-btn');
 
 // Object to store user data
 let newUser = {
