@@ -305,6 +305,60 @@ body {
 }
 
 
+/********** USER STATS *********/
+
+
+/* User Stats Container */
+.user-stats {
+  width: 18.6rem;
+  height: 5.666667rem;
+  margin: 0 auto;
+  border-radius: 0.666667rem;
+  background-color: var(--light-grey);
+  display: flex;
+  justify-content: center;
+}
+
+
+/* User Stats Inner Container */
+.user-stats-inner-container {
+  width: 16.666667rem;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* User Stat Container */
+.user-stat-container {
+  width: 5.266667rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+/* User Stat */
+.user-stat {
+  font-size: 0.733333rem;
+  font-weight: var(--fw-reg);
+  line-height: 1.066667rem;
+  color: var(--blue-grey); 
+  margin-top: 0;
+  margin-bottom: 0.533333rem;
+}
+
+
+/* User Stat Numbers */
+.user-stat-numbers {
+  font-size: 1.066667rem;
+  font-weight: var(--fw-bold);
+  line-height: 1.6rem;
+  color: var(--dark-grey);
+  margin: 0;
+}
+
+
 /********** DARK MODE STYLES *********/
 
 

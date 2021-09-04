@@ -8,15 +8,19 @@ let githubUsername = document.getElementById('github-username');
 let githubLogin = document.getElementById('github-login');
 let dateJoined = document.getElementById('github-date-joined');
 
+let userRepos = document.getElementById('user-repos');
+let userFollowers = document.getElementById('user-followers');
+let userFollowing = document.getElementById('user-following');
+
 // Object to store user data
 let newUser = {
   avatar: '',
   name: '',
   login: '',
   dateJoined: '',
-  bio: '',
-  blog: '',
+  repos: '',
   followers: '',
+  following: '',
 }
 
 // On Page Load
@@ -114,14 +118,17 @@ function getUser(userData) {
   newUser.name = userData["name"];
   newUser.login = userData["login"];
   newUser.dateJoined = userData["created_at"];
-  newUser.bio = userData["bio"];
-  newUser.blog = userData["blog"];
+  newUser.repos = userData["public_repos"];
   newUser.followers = userData["followers"];
+  newUser.following = userData["following"];
   
   // Update UI with new user object data
   userAvatar.style.backgroundImage = `url(${newUser.avatar})`;
   githubUsername.innerHTML = newUser.name;
   githubLogin.innerHTML = `@${newUser.login}`;
   dateJoined.innerHTML = formatDate(newUser.dateJoined);
+  userRepos.innerHTML = newUser.repos;
+  userFollowers.innerHTML = newUser.followers;
+  userFollowing.innerHTML = newUser.following;
 }
 

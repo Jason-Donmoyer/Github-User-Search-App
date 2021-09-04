@@ -32,7 +32,7 @@
     <div class="user-info-container">
       <div id="user-avatar" class="user-avatar"></div>
       <div class="user-info-container-copy">
-        <h1 id="github-username" class='github-username'>Name</h1>
+        <h1 id="github-username" class='github-username'></h1>
         <p id="github-login" class="github-login">@</p>
         <p class="github-joined">Joined <span id="github-date-joined"></span></p>
       </div>
@@ -43,9 +43,20 @@
     </div>
 
     <div class="user-stats">
-      <p class="repos">Repos <span class="user-repos"></span></p>
-      <p class="followers">Followers <span class="user-followers"></span></p>
-      <p class="following">Following <span class="user-following"></span></p>
+      <div class="user-stats-inner-container">
+        <div class="user-stat-container">
+          <p class="user-stat">Repos</p>
+          <p id="user-repos" class="user-stat-numbers"></p>
+        </div>
+        <div class="user-stat-container">
+          <p class="user-stat">Followers</p>
+          <p id="user-followers" class="user-stat-numbers"></p>
+        </div>
+        <div class="user-stat-container">
+          <p class="user-stat">Following</p>
+          <p id="user-following" class="user-stat-numbers"></p>
+        </div> 
+      </div>
     </div>
 
     <div class="social-info-container">
