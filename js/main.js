@@ -144,8 +144,15 @@ function getUser(userData) {
   userFollowers.innerHTML = newUser.followers;
   userFollowing.innerHTML = newUser.following;
   userLocation.innerHTML = newUser.location;
-  userBlog.innerHTML = newUser.blog;
-  userTwitterName.innerHTML = newUser.twitterUsername;
-  userCompany.innerHTML = newUser.company;
+  // userBlog.innerHTML = newUser.blog;
+  if (newUser.blog !== "") {
+    userBlog.innerHTML = newUser.blog;
+  } else {
+    userBlog.innerHTML = 'Not Available';
+  }
+  
+  newUser.twitterUsername !== null ? userTwitterName.innerHTML = newUser.twitterUsername : userTwitterName.innerHTML = 'Not Available';
+  newUser.company !== null ? userCompany.innerHTML = newUser.company : userCompany.innerHTML = 'Not Available';
+  
 }
 

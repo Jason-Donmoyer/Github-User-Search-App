@@ -380,8 +380,22 @@ body {
 }
 
 
+/* Social Icon */
+.social-icon {
+  margin-right: 1.283333rem;
+}
+
+/* Location Icon */
+.icon-location {
+  padding: 0 0.2rem;
+}
+
 /* User Social Info */
 .user-social-info {
+  font-size: 0.866667rem;
+  line-height: 1.266667rem;
+  font-weight: var(--fw-reg);
+  color: var(--blue-grey);
   margin: 0;
 }
 
