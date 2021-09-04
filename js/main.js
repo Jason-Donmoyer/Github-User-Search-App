@@ -13,37 +13,24 @@ let newUser = {
   avatar: '',
   name: '',
   login: '',
-  id: '',
+  dateJoined: '',
   bio: '',
   blog: '',
   followers: '',
 }
 
+// On Page Load
+fetchUser('octocat').then(userData => {
+  getUser(userData);
+});
 
 // Event listener for button click
 submitBtn.addEventListener('click', () => {
   // api call to github
   fetchUser(usernameInput.value).then(userData => {
-    // object value assignment
-    newUser.avatar = userData["avatar_url"];
-    newUser.name = userData["name"];
-    newUser.login = userData["login"];
-    newUser.dateJoined = userData["created_at"];
-    newUser.bio = userData["bio"];
-    newUser.blog = userData["blog"];
-    newUser.followers = userData["followers"];
-    
-    // Update UI with new user object data
-    userAvatar.style.backgroundImage = `url(${newUser.avatar})`;
-    githubUsername.innerHTML = newUser.name;
-    githubLogin.innerHTML = `@${newUser.login}`;
-    dateJoined.innerHTML = formatDate(newUser.dateJoined);
+    getUser(userData);
   });
 });
-
-
-
-
 
 
 // fetchUser('Jason-Donmoyer').then(userData => {
@@ -119,3 +106,22 @@ function formatDate(date) {
 
   return `${day} ${month} ${year}`
 }
+
+// Function to extract data and update UI
+function getUser(userData) {
+  // object value assignment
+  newUser.avatar = userData["avatar_url"];
+  newUser.name = userData["name"];
+  newUser.login = userData["login"];
+  newUser.dateJoined = userData["created_at"];
+  newUser.bio = userData["bio"];
+  newUser.blog = userData["blog"];
+  newUser.followers = userData["followers"];
+  
+  // Update UI with new user object data
+  userAvatar.style.backgroundImage = `url(${newUser.avatar})`;
+  githubUsername.innerHTML = newUser.name;
+  githubLogin.innerHTML = `@${newUser.login}`;
+  dateJoined.innerHTML = formatDate(newUser.dateJoined);
+}
+
