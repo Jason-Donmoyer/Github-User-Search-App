@@ -35,6 +35,12 @@ const darkHeaderCopy = document.getElementById('dark-header-copy');
 const sunIcon = document.getElementById('icon-sun');
 const moonIcon = document.getElementById('icon-moon');
 const searchBar = document.getElementById('search-bar-container');
+const mainContent = document.getElementById('main-content');
+const githubJoinedCopy = document.getElementById('github-joined-copy');
+const bioCopy = document.getElementById('bio-copy');
+const userStatsContainer = document.getElementById('user-stats');
+const userStats = document.getElementsByClassName('user-stat');
+const userStatNums = document.getElementsByClassName('user-stat-numbers');
 
 
 // Mode Toggle Logic
@@ -47,7 +53,17 @@ modeToggleBtn.addEventListener('click', () => {
   moonIcon.classList.toggle('header-display-none');
   searchBar.classList.toggle('dark-blue-grey-bg');
   usernameInput.classList.toggle('light-text-color');
-  usernameInput['::placeholder'].style.color = '#fff';
+  mainContent.classList.toggle('dark-blue-grey-bg');
+  githubUsername.classList.toggle('light-text-color');
+  githubJoinedCopy.classList.toggle('light-text-color');
+  bioCopy.classList.toggle('light-text-color');
+  userStatsContainer.classList.toggle('dark-bg')
+  
+  for (let i = 0; i < userStats.length; i++) {
+    userStats[i].classList.toggle('light-text-color');
+    userStatNums[i].classList.toggle('light-text-color');
+  }
+
 });
 
 
