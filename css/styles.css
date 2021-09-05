@@ -363,6 +363,7 @@ body {
 /********** SOCIAL INFO *********/
 
 
+
 /* Social Info Container */
 .social-info-container {
   height: 8.466667rem;
@@ -389,6 +390,12 @@ body {
 .icon-location {
   padding: 0 0.2rem;
 }
+/* Icons for User Info Not Available */
+
+/* Twitter-NA */
+#icon-twitter-not-available {
+  display: none;
+}
 
 /* User Social Info */
 .user-social-info {
@@ -397,6 +404,11 @@ body {
   font-weight: var(--fw-reg);
   color: var(--blue-grey);
   margin: 0;
+}
+
+/* User Social Info and Icon Not Available */
+.not-available {
+  color: var(--grey);
 }
 
 

@@ -17,6 +17,9 @@ let userBlog = document.getElementById('user-blog');
 let userTwitterName = document.getElementById('user-twitter-name');
 let userCompany = document.getElementById('user-company');
 
+let twitterIcon = document.getElementById('icon-twitter');
+let twitterIconNotAvailable = document.getElementById('icon-twitter-not-available');
+
 // Object to store user data
 let newUser = {
   avatar: '',
@@ -150,8 +153,26 @@ function getUser(userData) {
   } else {
     userBlog.innerHTML = 'Not Available';
   }
+
+  // Check if user has twitter info
+  if (newUser.twitterUsername !== null) {
+    userTwitterName.innerHTML = newUser.twitterUsername;
+    twitterIcon.style.display = 'inline';
+    twitterIconNotAvailable.style.display = 'none';
+    userTwitterName.classList.remove('not-available');
+  } else {
+    userTwitterName.innerHTML = 'Not Available';
+    twitterIcon.style.display = 'none';
+    twitterIconNotAvailable.style.display = 'inline';
+    userTwitterName.classList.add('not-available');
+  }
+  // if (newUser.blog !== "") {
+  //   userBlog.innerHTML = newUser.blog;
+  // } else {
+  //   userBlog.innerHTML = 'Not Available';
+  // }
   
-  newUser.twitterUsername !== null ? userTwitterName.innerHTML = newUser.twitterUsername : userTwitterName.innerHTML = 'Not Available';
+  // newUser.twitterUsername !== null ? userTwitterName.innerHTML = newUser.twitterUsername : userTwitterName.innerHTML = 'Not Available';
   newUser.company !== null ? userCompany.innerHTML = newUser.company : userCompany.innerHTML = 'Not Available';
   
 }
