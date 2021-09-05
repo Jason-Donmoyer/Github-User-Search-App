@@ -390,12 +390,33 @@ body {
 .icon-location {
   padding: 0 0.2rem;
 }
+
+
 /* Icons for User Info Not Available */
+
 
 /* Twitter-NA */
 #icon-twitter-not-available {
   display: none;
 }
+
+
+/* Location-NA */
+#icon-location-not-available {
+  display: none;
+}
+
+
+/* Blog-NA */
+#icon-blog-not-available {
+  display: none;
+}
+
+/* Company-NA */
+#icon-company-not-available {
+  display: none;
+}
+
 
 /* User Social Info */
 .user-social-info {
@@ -406,7 +427,8 @@ body {
   margin: 0;
 }
 
-/* User Social Info and Icon Not Available */
+
+/* User Social Info Not Available */
 .not-available {
   color: var(--grey);
 }

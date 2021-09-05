@@ -17,8 +17,14 @@ let userBlog = document.getElementById('user-blog');
 let userTwitterName = document.getElementById('user-twitter-name');
 let userCompany = document.getElementById('user-company');
 
+let locationIcon = document.getElementById('icon-location');
+let locationIconNotAvailable = document.getElementById('icon-location-not-available');
+let blogIcon = document.getElementById('icon-blog');
+let blogIconNotAvailable = document.getElementById('icon-blog-not-available');
 let twitterIcon = document.getElementById('icon-twitter');
 let twitterIconNotAvailable = document.getElementById('icon-twitter-not-available');
+let companyIcon = document.getElementById('icon-company');
+let companyIconNotAvailable = document.getElementById('icon-company-not-available');
 
 // Object to store user data
 let newUser = {
@@ -146,12 +152,31 @@ function getUser(userData) {
   userRepos.innerHTML = newUser.repos;
   userFollowers.innerHTML = newUser.followers;
   userFollowing.innerHTML = newUser.following;
-  userLocation.innerHTML = newUser.location;
-  // userBlog.innerHTML = newUser.blog;
+
+  // Check if user has location info
+  if (newUser.location !== null) {
+    userLocation.innerHTML = newUser.location;
+    locationIcon.style.display = 'inline';
+    locationIconNotAvailable.style.display = 'none';
+    userLocation.classList.remove('not-available');
+  } else {
+    locationIcon.style.display = 'none';
+    locationIconNotAvailable.style.display = 'inline';
+    userLocation.innerHTML = 'Not Available';
+    userLocation.classList.add('not-available');
+  }
+  
+  // Check if user has blog info
   if (newUser.blog !== "") {
     userBlog.innerHTML = newUser.blog;
+    blogIcon.style.display = 'inline';
+    blogIconNotAvailable.style.display = 'none';
+    userBlog.classList.remove('not-available');
   } else {
+    blogIcon.style.display = 'none';
+    blogIconNotAvailable.style.display = 'inline';
     userBlog.innerHTML = 'Not Available';
+    userBlog.classList.add('not-available');
   }
 
   // Check if user has twitter info
@@ -161,19 +186,24 @@ function getUser(userData) {
     twitterIconNotAvailable.style.display = 'none';
     userTwitterName.classList.remove('not-available');
   } else {
-    userTwitterName.innerHTML = 'Not Available';
     twitterIcon.style.display = 'none';
     twitterIconNotAvailable.style.display = 'inline';
+    userTwitterName.innerHTML = 'Not Available';
     userTwitterName.classList.add('not-available');
   }
-  // if (newUser.blog !== "") {
-  //   userBlog.innerHTML = newUser.blog;
-  // } else {
-  //   userBlog.innerHTML = 'Not Available';
-  // }
-  
-  // newUser.twitterUsername !== null ? userTwitterName.innerHTML = newUser.twitterUsername : userTwitterName.innerHTML = 'Not Available';
-  newUser.company !== null ? userCompany.innerHTML = newUser.company : userCompany.innerHTML = 'Not Available';
-  
+
+  // Check if user has company information
+  if (newUser.company !== null) {
+    userCompany.innerHTML = newUser.company;
+    companyIcon.style.display = 'inline';
+    companyIconNotAvailable.style.display = 'none';
+    userCompany.classList.remove('not-available');
+  } else {
+    companyIcon.style.display = 'none';
+    companyIconNotAvailable.style.display = 'inline';
+    userCompany.innerHTML = 'Not Available';
+    userCompany.classList.add('not-available');
+  }
+
 }
 
