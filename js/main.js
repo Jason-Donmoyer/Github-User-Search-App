@@ -34,6 +34,7 @@ const lightHeaderCopy = document.getElementById('light-header-copy');
 const darkHeaderCopy = document.getElementById('dark-header-copy');
 const sunIcon = document.getElementById('icon-sun');
 const moonIcon = document.getElementById('icon-moon');
+const searchBar = document.getElementById('search-bar-container');
 
 
 // Mode Toggle Logic
@@ -44,6 +45,9 @@ modeToggleBtn.addEventListener('click', () => {
   darkHeaderCopy.classList.toggle('header-display-none');
   sunIcon.classList.toggle('header-display-none');
   moonIcon.classList.toggle('header-display-none');
+  searchBar.classList.toggle('dark-blue-grey-bg');
+  usernameInput.classList.toggle('light-text-color');
+  usernameInput['::placeholder'].style.color = '#fff';
 });
 
 

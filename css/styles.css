@@ -25,7 +25,7 @@
   /* Font-weights */
   --fw-reg: 400;
   --fw-bold: 700;
-  
+
 
   /* COLORS */
 
@@ -44,7 +44,7 @@
   /* Dark Mode */
   --dark-blackish-grey: #141D2F;
   --dark-blue-grey: #1E2A47;
-  
+
 
 }
 
@@ -61,8 +61,9 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-*, 
-*:before, 
+
+*,
+*:before,
 *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -176,6 +177,7 @@ body {
   font-size: 0.866667rem;
   font-weight: var(--fw-reg);
   line-height: 1.666667rem;
+  background-color: transparent;
   color: var(--blue-grey);
 }
 
@@ -352,7 +354,7 @@ body {
   font-size: 0.733333rem;
   font-weight: var(--fw-reg);
   line-height: 1.066667rem;
-  color: var(--blue-grey); 
+  color: var(--blue-grey);
   margin-top: 0;
   margin-bottom: 0.533333rem;
 }
@@ -461,7 +463,21 @@ body {
   background-color: var(--dark-blackish-grey);
 }
 
+
+/* Dark Blue Background */
+.dark-blue-grey-bg {
+  background-color: var(--dark-blue-grey);
+}
+
+
 /* White Text Color */
-.light-text-color {
+.light-text-color,
+.light-text-color::placeholder {
   color: var(--white);
 }
+
+
+/* Light Placeholder */
+/* .light-text-color::placeholder {
+  border-color: ;
+} */
