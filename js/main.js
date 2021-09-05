@@ -26,6 +26,27 @@ let twitterIconNotAvailable = document.getElementById('icon-twitter-not-availabl
 let companyIcon = document.getElementById('icon-company');
 let companyIconNotAvailable = document.getElementById('icon-company-not-available');
 
+// Mode Toggle Variables
+const modeToggleBtn = document.getElementById('mode-toggle-btn');
+const body = document.querySelector('body');
+const logo = document.getElementById('logo');
+const lightHeaderCopy = document.getElementById('light-header-copy');
+const darkHeaderCopy = document.getElementById('dark-header-copy');
+const sunIcon = document.getElementById('icon-sun');
+const moonIcon = document.getElementById('icon-moon');
+
+
+// Mode Toggle Logic
+modeToggleBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-bg');
+  logo.classList.toggle('light-text-color');
+  lightHeaderCopy.classList.toggle('header-display-none');
+  darkHeaderCopy.classList.toggle('header-display-none');
+  sunIcon.classList.toggle('header-display-none');
+  moonIcon.classList.toggle('header-display-none');
+});
+
+
 // Object to store user data
 let newUser = {
   avatar: '',

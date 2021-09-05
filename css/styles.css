@@ -103,7 +103,7 @@ body {
 
 /* Mode Toggle */
 .mode-toggle {
-  width: 5.2rem;
+  /* width: 5.2rem; */
   height: 1.333333rem;
   display: flex;
 }
@@ -113,23 +113,31 @@ body {
   cursor: pointer;
 }
 
-
-/* Dark Header Copy */
-.dark-header-copy {
+/* Shared Header Copy Styles */
+.header-copy {
   font-size: 0.866667rem;
   line-height: 1.283333rem;
   letter-spacing: 0.166667rem;
   font-weight: var(--fw-bold);
-  color: var(--blue-grey);
   text-transform: uppercase;
   margin: 0 1.066667rem 0 0;
+}
+
+/* Dark Header Copy */
+.dark-header-copy {
+  color: var(--blue-grey);
+}
+
+
+/* Shared Header Icon Styles */
+.header-icon {
+  height: 1.333333rem;
+  width: 1.333333rem;
 }
 
 
 /* Moon Icon */
 .icon-moon {
-  height: 1.333333rem;
-  width: 1.333333rem;
   color: var(--blue-grey);
 }
 
@@ -437,13 +445,23 @@ body {
 /********** DARK MODE STYLES *********/
 
 
-/* Light Header Copy */
-.light-header-copy {
+/* Header Display */
+.header-display-none {
   display: none;
 }
 
 
 /* Sun Icon */
-.icon-sun {
+/* #icon-sun {
   display: none;
+} */
+
+/* Dark Background */
+.dark-bg {
+  background-color: var(--dark-blackish-grey);
+}
+
+/* White Text Color */
+.light-text-color {
+  color: var(--white);
 }
